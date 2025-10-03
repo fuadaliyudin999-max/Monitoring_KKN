@@ -1,0 +1,138 @@
+:root {
+  --maroon: #800000;
+  --maroon-dark: #600000;
+  --gold: #FFD700;
+  --light-bg: #f8f9fa;
+  --text-dark: #2c2c2c;
+  --shadow: rgba(0, 0, 0, 0.1);
+}
+
+/* === Body === */
+body {
+  background-color: var(--light-bg) !important;
+  font-family: 'Segoe UI', sans-serif !important;
+  color: var(--text-dark) !important;
+  line-height: 1.6;
+}
+
+/* === Navbar === */
+.navbar {
+  background: linear-gradient(90deg, var(--maroon), var(--maroon-dark)) !important;
+  box-shadow: 0 2px 5px var(--shadow);
+}
+.navbar .navbar-brand,
+.navbar .nav-link {
+  color: var(--gold) !important;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: #fff !important;
+}
+
+/* === Sidebar === */
+.sidebar {
+  background: linear-gradient(180deg, var(--maroon), var(--maroon-dark)) !important;
+  min-height: 100vh;
+  width: 240px;
+  transition: all 0.3s ease;
+  box-shadow: 2px 0 5px var(--shadow);
+}
+.sidebar h5 {
+  color: var(--gold);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.sidebar .nav-link {
+  color: var(--gold) !important;
+  padding: 10px 14px;
+  margin-bottom: 4px;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+.sidebar .nav-link:hover {
+  background-color: var(--maroon-dark) !important;
+  color: #fff !important;
+}
+
+/* Sidebar hide mode */
+.sidebar.hidden {
+  margin-left: -240px;
+}
+.main-content {
+  flex: 1;
+  transition: margin-left 0.3s ease;
+  margin-left: 240px;
+}
+.main-content.full {
+  margin-left: 0;
+}
+
+/* === Cards === */
+.card {
+  border: none !important;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px var(--shadow);
+}
+.card-header {
+  background: linear-gradient(90deg, var(--maroon), var(--maroon-dark)) !important;
+  color: var(--gold) !important;
+  font-weight: 600;
+  border-radius: 10px 10px 0 0 !important;
+}
+.card-body {
+  background-color: #fff !important;
+}
+
+/* === Buttons === */
+.btn-primary {
+  background: linear-gradient(90deg, var(--maroon), var(--maroon-dark)) !important;
+  border: none !important;
+  font-weight: 600;
+  box-shadow: 0 3px 6px var(--shadow);
+}
+.btn-primary:hover {
+  opacity: 0.9;
+}
+.btn-outline-primary {
+  color: var(--maroon) !important;
+  border-color: var(--maroon) !important;
+  font-weight: 500;
+}
+.btn-outline-primary:hover {
+  background-color: var(--maroon) !important;
+  color: #fff !important;
+}
+
+/* === Tables === */
+.table {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px var(--shadow);
+}
+.table thead {
+  background: linear-gradient(90deg, var(--maroon), var(--maroon-dark)) !important;
+  color: var(--gold) !important;
+}
+.table tbody tr:hover {
+  background-color: #fff5d1 !important; /* Gold soft highlight */
+}
+
+/* === Footer === */
+footer {
+  background: linear-gradient(90deg, var(--maroon), var(--maroon-dark)) !important;
+  color: var(--gold) !important;
+  text-align: center;
+  padding: 12px;
+  font-size: 14px;
+  box-shadow: 0 -2px 5px var(--shadow);
+}
+
+/* Greeting in navbar */
+.navbar .user-greeting {
+  color: #fff !important;
+  font-weight: 500;
+}
